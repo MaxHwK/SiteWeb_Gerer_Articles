@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css//header/header.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/base.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/footer/footer.css') }}">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <video autoplay loop poster="video.jpg" id="videofond">
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+        
+        {% include 'header/header.html.twig' %}
+        {% block body %}{% endblock %}
+        {% include 'footer/footer.html.twig' %}
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

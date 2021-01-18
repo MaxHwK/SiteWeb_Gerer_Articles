@@ -1,0 +1,20 @@
+.box-accueil {
+    border: 1px solid #c4c4c4;
+    border-radius: 2ch;
+    padding: 2%;
+    margin: auto;
+    margin-top: 100px;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    box-shadow: 2px 2px 4px #beceff;
+}
+
+#accueil-image {
+    width: 30%;
+}
+
+#titre {
+    font-size: 5ch;
+    text-shadow: 2px 2px 4px #beceff;
+}

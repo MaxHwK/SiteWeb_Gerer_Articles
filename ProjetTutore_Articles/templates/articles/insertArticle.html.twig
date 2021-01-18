@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Creation Article{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/article/insert/insertArticle.css') }}">
+{% endblock %}
+
+{% block body %}
+    <section>
+        <div id='formInsertArticle'>
+            <h1 id="titre">Creation d'un Article</h1> <br>
+            {{ form(form) }}
+        </div>
+    </section>
+{% endblock %}

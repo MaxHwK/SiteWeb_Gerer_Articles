@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modification Article{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/article/update/updateArticle.css') }}">
+{% endblock %}
+
+{% block body %}
+    <section>
+        <div id='formUpdateArticle'>
+            <h1 id="titre">Modification d'un Article</h1> <br>
+            {{ form(form) }}
+        </div>
+    </section>
+{% endblock %}
